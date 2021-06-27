@@ -1,0 +1,30 @@
+{
+  "users": [
+    {
+      "fullName": "Musa ",
+      "username": "Musame",
+      "email": "musa@gmail.com",
+      "password": "password",
+      "id": 1
+    },
+    {
+      "fullName": "Seto",
+      "username": "Setooo",
+      "email": "seto@mail.com",
+      "password": "password",
+      "role": "user",
+      "id": 2
+    },
+    {
+      "fullName": "Gates",
+      "username": "Gate",
+      "email": "asdfg@gamul.com",
+      "password": "123",
+      "role": "user",
+      "id": 3
+    }
+  ],
+  "transactions": [],
+  "products": [],
+  "cart": []
+}
