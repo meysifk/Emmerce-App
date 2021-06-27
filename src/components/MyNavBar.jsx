@@ -11,7 +11,7 @@ class MyNavbar extends React.Component{
                     <NavbarBrand>Emmerce</NavbarBrand>
                     <Nav>
                         <NavItem>
-                            <NavbarText>Hello, {this.props.userGlobal.username}</NavbarText>
+                            <NavbarText>Hello, {this.props.username}</NavbarText>
                         </NavItem>
                         <UncontrolledDropdown nav inNavbar>
                             <DropdownToggle nav caret>

@@ -24,3 +24,21 @@ export const registerUser = ({fullName, username, email, password}) =>{
         })
     }
 }
+
+
+export const loginUser = ({ username, password}) => {
+    return (dispatch) => {
+        Axios.get(`${API_URL}/users`, {
+            params: {
+                username,
+                password
+            }
+        })
+        .then((result) => {
+            console.log(result.data)
+        })
+        .catch((err) => {
+            alert('Terjadi kesalahan')
+        })
+    }
+}
