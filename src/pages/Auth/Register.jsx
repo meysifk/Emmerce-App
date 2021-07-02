@@ -1,7 +1,5 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-// import Axios from 'axios'
-// import {API_URL} from '../../constants/API'
 import {registerUser} from '../../redux/actions/user'
 import {connect} from 'react-redux'
 

@@ -22,9 +22,321 @@
       "password": "123",
       "role": "user",
       "id": 3
+    },
+    {
+      "fullName": "Admin",
+      "username": "Admin",
+      "email": "asdfg@gamul.com",
+      "password": "1234",
+      "role": "admin",
+      "id": 3
     }
   ],
-  "transactions": [],
-  "products": [],
-  "cart": []
+  "transactions": [
+    {
+      "userId": 3,
+      "address": "Jakarta",
+      "recipientName": "Meysi",
+      "totalPrice": 19740,
+      "totalPayment": 20000000,
+      "transactionDate": "2-7-2021",
+      "transactionItems": [
+        {
+          "userId": 3,
+          "productId": 2,
+          "price": 2500,
+          "productName": "Shirt Putih",
+          "productImage": "https://d29c1z66frfv6c.cloudfront.net/pub/media/catalog/product/large/6fd7fb8c9913c748f6b7abf18de3c50e81db2bd2_xxl-1.jpg",
+          "quantity": 3,
+          "id": 1
+        },
+        {
+          "userId": 3,
+          "productId": 1,
+          "price": 2600,
+          "productName": "Shirt Hitam",
+          "productImage": "https://d29c1z66frfv6c.cloudfront.net/pub/media/catalog/product/large/0a877e4986f8cbc00bebc6da77404032b1fe4f11_xxl-1.jpg",
+          "quantity": 3,
+          "id": 2
+        },
+        {
+          "userId": 3,
+          "productId": 3,
+          "price": 3500,
+          "productName": "Shirt Hitam",
+          "productImage": "https://d29c1z66frfv6c.cloudfront.net/pub/media/catalog/product/large/6594aec2a5314681fb8ae36b45da529f3c5f9cf8_xxl-1.jpg",
+          "quantity": 1,
+          "id": 3
+        }
+      ],
+      "id": 1
+    },
+    {
+      "userId": 3,
+      "address": "Jakarta",
+      "recipientName": "Agung",
+      "totalPrice": 19740,
+      "totalPayment": 1200000,
+      "transactionDate": "2-7-2021",
+      "transactionItems": [
+        {
+          "userId": 3,
+          "productId": 2,
+          "price": 2500,
+          "productName": "Shirt Putih",
+          "productImage": "https://d29c1z66frfv6c.cloudfront.net/pub/media/catalog/product/large/6fd7fb8c9913c748f6b7abf18de3c50e81db2bd2_xxl-1.jpg",
+          "quantity": 3,
+          "id": 1
+        },
+        {
+          "userId": 3,
+          "productId": 1,
+          "price": 2600,
+          "productName": "Shirt Hitam",
+          "productImage": "https://d29c1z66frfv6c.cloudfront.net/pub/media/catalog/product/large/0a877e4986f8cbc00bebc6da77404032b1fe4f11_xxl-1.jpg",
+          "quantity": 3,
+          "id": 2
+        },
+        {
+          "userId": 3,
+          "productId": 3,
+          "price": 3500,
+          "productName": "Shirt Hitam",
+          "productImage": "https://d29c1z66frfv6c.cloudfront.net/pub/media/catalog/product/large/6594aec2a5314681fb8ae36b45da529f3c5f9cf8_xxl-1.jpg",
+          "quantity": 1,
+          "id": 3
+        }
+      ],
+      "id": 2
+    },
+    {
+      "userId": 3,
+      "address": "Bandung",
+      "recipientName": "Arnold",
+      "totalPrice": 19740,
+      "totalPayment": 19740,
+      "transactionDate": "2-7-2021",
+      "transactionItems": [
+        {
+          "userId": 3,
+          "productId": 2,
+          "price": 2500,
+          "productName": "Shirt Putih",
+          "productImage": "https://d29c1z66frfv6c.cloudfront.net/pub/media/catalog/product/large/6fd7fb8c9913c748f6b7abf18de3c50e81db2bd2_xxl-1.jpg",
+          "quantity": 3,
+          "id": 1
+        },
+        {
+          "userId": 3,
+          "productId": 1,
+          "price": 2600,
+          "productName": "Shirt Hitam",
+          "productImage": "https://d29c1z66frfv6c.cloudfront.net/pub/media/catalog/product/large/0a877e4986f8cbc00bebc6da77404032b1fe4f11_xxl-1.jpg",
+          "quantity": 3,
+          "id": 2
+        },
+        {
+          "userId": 3,
+          "productId": 3,
+          "price": 3500,
+          "productName": "Shirt Hitam",
+          "productImage": "https://d29c1z66frfv6c.cloudfront.net/pub/media/catalog/product/large/6594aec2a5314681fb8ae36b45da529f3c5f9cf8_xxl-1.jpg",
+          "quantity": 1,
+          "id": 3
+        }
+      ],
+      "id": 3
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "productName": "Shirt Hitam",
+      "price": 2600,
+      "productImage": "https://d29c1z66frfv6c.cloudfront.net/pub/media/catalog/product/large/0a877e4986f8cbc00bebc6da77404032b1fe4f11_xxl-1.jpg",
+      "description": "Good Quality",
+      "category": "Shirt"
+    },
+    {
+      "id": 2,
+      "productName": "Shirt Putih",
+      "price": 2500,
+      "productImage": "https://d29c1z66frfv6c.cloudfront.net/pub/media/catalog/product/large/6fd7fb8c9913c748f6b7abf18de3c50e81db2bd2_xxl-1.jpg",
+      "description": "Good Quality",
+      "category": "Shirt"
+    },
+    {
+      "id": 3,
+      "productName": "Shirt Hitam",
+      "price": 3500,
+      "productImage": "https://d29c1z66frfv6c.cloudfront.net/pub/media/catalog/product/large/6594aec2a5314681fb8ae36b45da529f3c5f9cf8_xxl-1.jpg",
+      "description": "Good Quality",
+      "category": "Shirt"
+    },
+    {
+      "id": 4,
+      "productName": "Shirt Putih",
+      "price": 1500,
+      "productImage": "https://d29c1z66frfv6c.cloudfront.net/pub/media/catalog/product/large/55997052ad1f19d47df9ab18b2df67facecedcaf_xxl-1.jpg",
+      "description": "Good Quality",
+      "category": "Shirt"
+    },
+    {
+      "id": 5,
+      "productName": "Shirt Hitam",
+      "price": 2550,
+      "productImage": "https://d29c1z66frfv6c.cloudfront.net/pub/media/catalog/product/large/74cb33eacc2d04bfc7d3095243faa410cd3554ea_xxl-1.jpg",
+      "description": "Good Quality",
+      "category": "Shirt"
+    },
+    {
+      "id": 7,
+      "productName": "Pants Hitam",
+      "price": 25000,
+      "productImage": "https://d29c1z66frfv6c.cloudfront.net/pub/media/catalog/product/large/6e723710963dd59203e9257cb0cb832c5f9e172a_xxl-1.jpg",
+      "description": "Good Quality",
+      "category": "Pants"
+    },
+    {
+      "id": 8,
+      "productName": "Pants Putih",
+      "price": 2500,
+      "productImage": "https://d29c1z66frfv6c.cloudfront.net/pub/media/catalog/product/large/465973bb3a4316313ea3935145a1ce56a624e4eb_xxl-1.jpg",
+      "description": "Good Quality",
+      "category": "Pants"
+    },
+    {
+      "id": 9,
+      "productName": "Pants Hitam",
+      "price": 3500,
+      "productImage": "https://d29c1z66frfv6c.cloudfront.net/pub/media/catalog/product/large/74cb33eacc2d04bfc7d3095243faa410cd3554ea_xxl-1.jpg",
+      "description": "Good Quality",
+      "category": "Pants"
+    },
+    {
+      "id": 10,
+      "productName": "Pants Putih",
+      "price": 1500,
+      "productImage": "https://d29c1z66frfv6c.cloudfront.net/pub/media/catalog/product/large/47d028a57de4afae04923a7061a8c55ab4838a23_xxl-1.jpg",
+      "description": "Good Quality",
+      "category": "Pants"
+    },
+    {
+      "id": 11,
+      "productName": "Pants Hitam",
+      "price": 2550,
+      "productImage": "https://d29c1z66frfv6c.cloudfront.net/pub/media/catalog/product/large/2d111461aa3f485e87c03c7d80c44d2b411607c1_xxl-1.jpg",
+      "description": "Good Quality",
+      "category": "Pants"
+    },
+    {
+      "id": 12,
+      "productName": "Pants Putih",
+      "price": 4000,
+      "productImage": "https://d29c1z66frfv6c.cloudfront.net/pub/media/catalog/product/large/66fac32a8079d2bf27589f4306470c2db62d7cfa_xxl-1.jpg",
+      "description": "Good Quality",
+      "category": "Pants"
+    },
+    {
+      "id": 13,
+      "productName": "Accessories Hitam",
+      "price": 25000,
+      "productImage": "https://d29c1z66frfv6c.cloudfront.net/pub/media/catalog/product/large/0a877e4986f8cbc00bebc6da77404032b1fe4f11_xxl-1.jpg",
+      "description": "Good Quality",
+      "category": "Accessories"
+    },
+    {
+      "id": 14,
+      "productName": "Accessories Putih",
+      "price": 2500,
+      "productImage": "https://d29c1z66frfv6c.cloudfront.net/pub/media/catalog/product/large/6fd7fb8c9913c748f6b7abf18de3c50e81db2bd2_xxl-1.jpg",
+      "description": "Good Quality",
+      "category": "Accessories"
+    },
+    {
+      "id": 15,
+      "productName": "Accessories Hats",
+      "price": 3500,
+      "productImage": "https://hm-media-prod.s3.amazonaws.com/pub/media/catalog/product/medium/f19e208981232fcb91f30ec4bd071226a18c1e85_xxl-1.jpg",
+      "description": "Good Quality",
+      "category": "Accessories"
+    },
+    {
+      "id": 16,
+      "productName": "Accessories Putih",
+      "price": 1500,
+      "productImage": "https://hm-media-prod.s3.amazonaws.com/pub/media/catalog/product/medium/7f216d39020c740f6d8c1e9616273f9f23481e19_xxl-1.jpg",
+      "description": "Good Quality",
+      "category": "Accessories"
+    },
+    {
+      "id": 17,
+      "productName": "Accessories Hitam",
+      "price": 2550,
+      "productImage": "https://hm-media-prod.s3.amazonaws.com/pub/media/catalog/product/medium/c04a7cf0d5c71c644a1510c8d9956b0706367aec_xxl-1.jpg",
+      "description": "Good Quality",
+      "category": "Accessories"
+    },
+    {
+      "id": 18,
+      "productName": "Accessories Putih",
+      "price": 4000,
+      "productImage": "https://hm-media-prod.s3.amazonaws.com/pub/media/catalog/product/medium/e887070c62ac430f165a21f126853b853bec24d3_xxl-1.jpg",
+      "description": "Good Quality",
+      "category": "Accessories"
+    },
+    {
+      "productName": "Long Hooded T-shirt Army",
+      "price": 1550,
+      "productImage": "https://d29c1z66frfv6c.cloudfront.net/pub/media/catalog/product/large/e56928fc909ddc0bde9a242d5c5ba5391d1cb335_xxl-1.jpg",
+      "description": "Nice",
+      "category": "Shirt",
+      "id": 19
+    },
+    {
+      "productName": "Ribbed Shorts",
+      "price": 2350,
+      "productImage": "https://d29c1z66frfv6c.cloudfront.net/pub/media/catalog/product/large/10266ad19450c84eedd47a4a8b0fb04022d24820_xxl-1.jpg",
+      "description": "Cool",
+      "category": "Pants",
+      "id": 20
+    },
+    {
+      "productName": "Quilted Pool Shoes",
+      "price": 500,
+      "productImage": "https://d29c1z66frfv6c.cloudfront.net/pub/media/catalog/product/large/1fd79b66f8a9e560bfb9dc588ba05fdc6415a34b_xxl-1.jpg",
+      "description": "Comfy",
+      "category": "Accessories",
+      "id": 21
+    }
+  ],
+  "carts": [
+    {
+      "userId": 3,
+      "productId": 1,
+      "price": 2600,
+      "productName": "Shirt Hitam",
+      "productImage": "https://d29c1z66frfv6c.cloudfront.net/pub/media/catalog/product/large/0a877e4986f8cbc00bebc6da77404032b1fe4f11_xxl-1.jpg",
+      "quantity": 2,
+      "id": 1
+    },
+    {
+      "userId": 3,
+      "productId": 2,
+      "price": 2500,
+      "productName": "Shirt Putih",
+      "productImage": "https://d29c1z66frfv6c.cloudfront.net/pub/media/catalog/product/large/6fd7fb8c9913c748f6b7abf18de3c50e81db2bd2_xxl-1.jpg",
+      "quantity": 1,
+      "id": 2
+    },
+    {
+      "userId": 3,
+      "productId": 3,
+      "price": 3500,
+      "productName": "Shirt Hitam",
+      "productImage": "https://d29c1z66frfv6c.cloudfront.net/pub/media/catalog/product/large/6594aec2a5314681fb8ae36b45da529f3c5f9cf8_xxl-1.jpg",
+      "quantity": 1,
+      "id": 3
+    }
+  ]
 }

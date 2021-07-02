@@ -31,14 +31,77 @@ export const loginUser = ({ username, password}) => {
         Axios.get(`${API_URL}/users`, {
             params: {
                 username,
-                password
             }
         })
         .then((result) => {
-            console.log(result.data)
+            // console.log(result.data)
+
+            if(result.data.length){
+                if(password === result.data[0].password){
+                    delete result.data[0].password
+
+                    localStorage.setItem("userDataEmmerce", JSON.stringify(result.data[0]))
+
+                    dispatch({
+                        type: "USER_LOGIN",
+                        payload: result.data[0]
+                    })
+                }else{
+                    // Handle Error wrong password
+                    dispatch({
+                        type: "USER_ERROR",
+                        payload: "Wrong Password"
+                    })
+                }
+            }else{
+                //Handle Error Username Not Found
+                dispatch({
+                    type: "USER_ERROR",
+                    payload: "Username Not Found"
+                })
+            }
+
+            
         })
         .catch((err) => {
-            alert('Terjadi kesalahan')
+            alert('Error')
         })
+    }
+}
+
+export const logoutUser = () => {
+    localStorage.removeItem("userDataEmmerce");
+    return {
+        type: "USER_LOGOUT"
+    }
+}
+
+
+export const userKeepLogin = (userData) => {
+    return (dispatch) => {
+        Axios.get(`${API_URL}/users`, {
+            params: {
+                id: userData.id
+            }
+        })
+        .then((result) => {
+            delete result.data[0].password
+            
+            localStorage.setItem("userDataEmmerce", JSON.stringify(result.data[0]))
+
+            dispatch({
+                type: "USER_LOGIN",
+                payload: result.data[0]
+            })
+        })
+        .catch((err) => {
+            alert("Server Error")
+        })
+    }
+}
+
+export const checkStorage = () => {
+    return{
+        type: "CHECK_STORAGE",
     }
 }
